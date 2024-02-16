@@ -1,0 +1,199 @@
+@keyframes vibrate {
+    0%{
+        transform: rotate(1deg);
+    }
+    10%{
+        transform:  rotate(-1deg);
+    }
+    20%{
+        transform: rotate(1deg);
+    }
+    30%{
+        transform:  rotate(-1deg);
+    }
+    40%{
+        transform: rotate(1deg);
+    }
+    50%{
+        transform:  rotate(-1deg);
+    }
+    60%{
+        transform: rotate(1deg);
+    }
+    70%{
+        transform:  rotate(-1deg);
+    }
+    80%{
+        transform: rotate(1deg);
+    }
+    90%{
+        transform:  rotate(-1deg);
+    }
+    100%{
+        transform: rotate(1deg);
+    }
+    
+}
+
+@keyframes successTik {
+    0%{
+        font-size: 0;
+        color: #000;
+    }
+    80%{
+        font-size: 100px;
+        color: #000;
+    }
+    100%{
+        
+        font-size: 100px;
+        color: green;
+    }
+}
+@keyframes  popUpStatusBar {
+    0%{
+        background: green;
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+        background: green;
+
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#000000af, #060606b3 ) , url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    /* background:; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.loginSigninForm{
+    width: 400px;
+    height: auto;
+    padding: 10px 20px;
+    background: #6c6c6c2c;
+    color: aliceblue;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;    
+    box-shadow: #656565af 0 0 10px;
+}
+.loginSigninForm h1{
+    color: #9f9f9f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.loginSigninForm #loginCard{
+    width: 100%;
+    display: flex;
+    /* display: none; */
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.loginSigninForm input{
+    padding: 10px 20px;
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #656565af;
+    border-radius: 10px;
+    color: #9f9f9f;
+
+}
+.loginSigninForm input:focus{
+    border: #6c6c6c 1px solid;
+    box-shadow: #6c6c6c 0 0 3px;
+}
+.loginSigninForm input::placeholder{
+    font-size: 15px;
+}
+.loginSigninForm #loginSubmit{
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #b3b2b2c0;
+    text-transform: uppercase;
+    color: rgb(52, 52, 52);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.loginSigninForm #loginSubmit:hover{
+    cursor: pointer;
+    background: #fff;
+}
+.loginSigninForm .loginFooter{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+.loginSigninForm a{
+    color: #11119f;
+    text-decoration: none;   
+}
+
+.loginSigninForm a:hover{
+    text-decoration: underline;
+}
+
+.loginSigninForm #signUpCard{
+    display: none;
+}
+
+.sussessPopup{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    color: #242424;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:15px ;
+    gap: 20px;
+    top: 10%;
+    transition: transform ease 0.5s;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    /* display: none; */
+    font-size: 20px;
+    /* position: relative; */
+}
+
+.sussessPopup .fa-circle-check{
+    font-size: 100px;
+    color: green;
+
+}
+
+
+.sussessPopup .popUpStatus{
+    /* width: 100%; */
+    height: 10px ;
+    position: absolute;
+    left: 0;
+    background: #04cd26;
+    bottom: 0px;
+    border-radius: 0 0 10px 10px;
+   /* animation: ;  */
+}
